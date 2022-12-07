@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Wars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div id="start">
+            <img src="assets/title5.png" alt="Space Wars">
+            <div class="wrap">
+                <button class="button" onclick="start()">Play Game</button>
+              </div>
+        </div>
+
+        <div id="menu" style="display: none">
+            <img src="assets/title5.png" alt="Space Wars">
+            <div class="wrap2">
+                <div class="left-column">            
+                    <img id="wasd" src="assets/wasd.png" width="210px" >
+                    <img id="wasd" src="assets/spacebar.png" width="210px" ></div>
+                <div class="right-column">
+                    <img src="assets/difficulty2.png">            
+                ></div>
+            </div>
+            <div class="wrap2">
+                <button class="button normalbutton" onclick="playGame('EASY')">Easy</button>
+                <button class="button normalbutton" onclick="playGame('MEDIUM')">Medium</button>
+                <button class="button normalbutton" onclick="playGame('HARD')">Hard</button>
+              </div>
+        </div>
+
+        <div id="game-over" style="display: none">
+            <img src="assets/title5.png" alt="Space Wars">
+            <div class="wrap">
+                <p id="end-result">YOUR SCORE: 10</p>
+            </div>
+            
+            <div class="wrap">
+                <button class="button" onclick="start()">Play Again</button>
+              </div>
+        </div>
+
+
+        <div id="game">
+            <div style="position: absolute; display: flex; width: 100%; align-items: center; color: yellow; margin-left: 36%; margin-right: 35%; padding-top: 10px;">
+                <div class="bar-element" id="lives">Lives: 5</div>
+                <div class="bar-element" id="score">Score: 0</div>
+                <div class="bar-element" id="level">Level: 1</div>
+            </div>
+            <canvas></canvas>
+        </div>
+</body>
+
+<script src="settings.js"></script>
+<script src="commons.js"></script>
+<script src="menu.js"></script>
+<script src="model.js"></script>
+<script src="app2.js"></script>
+<script src="control.js"></script>
+
+</html>
