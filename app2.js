@@ -192,8 +192,6 @@ function update(delta) {
     drawRockets()
     drawInvaders()
     nextLevel()
-    // drawMiddle('Lives: ' + (parseInt(settings.lives) - settings.howManyTimesHit) + ' Score: ' + settings.score + 
-    // ' Level: ' + settings.level,-9)
 }
 
 function reset(){

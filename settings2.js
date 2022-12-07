@@ -1,6 +1,3 @@
-// const gameScreen = document.getElementById('screen')
-// const panel = document.getElementById('panel')
-// const visitCounterHtml = document.getElementById('visitCounter')
 
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')

@@ -1,3 +1,4 @@
+
 class Entity{
     constructor(x, y, velocity, object, offset={x:0,y:0}){
         this.x = x
@@ -37,11 +38,10 @@ class Entity{
     }
 
     drawEntity(){
-        
-            // c.fillStyle='red'
-            // c.fillRect(this.x, this.y,this.width,this.height)
+        //for debug purpose
+        // c.fillStyle='red'
+        // c.fillRect(this.x, this.y,this.width,this.height)
         c.drawImage(this.image, this.x - this.offset.x, this.y - this.offset.y)
-        //c.drawImage(this.image, this.x - 20, this.y - this.height)
     }
 
     isHit(entity) {
@@ -94,9 +94,6 @@ class Invader extends Enemy{
         rockets.push(new Rocket(this.x-1, this.shotHeight(), settings.enemy.missleSpeed, 'left-down',this.ship.rocket,'enemy'))
         
     }
-
-
-
 }
 
 

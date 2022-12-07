@@ -5,6 +5,7 @@ const endResult = document.getElementById("end-result")
 
 
 function start() {
+    toogleScreen('game-over', false)
     toogleScreen('start',false)
     toogleScreen('menu', true)
 }
